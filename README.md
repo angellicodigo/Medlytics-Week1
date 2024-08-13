@@ -8,6 +8,22 @@ The challenge involved predicting whether a patient has **hypothroidism** and de
 ## Presentation
 Our team looked at the ROC curves, correlation heatmap, and used random forest for feature selection to determine that entries, 'TSH', 'T3', 'TT4', and 'FTI'. We then did another random forest and saw that 'TSH' was the more impactful classifer and ended up producing an inaccurate ROC curve. We can improve this model by using a better machine learning model or conducting literature review on hypothroidism.
 
+Here is the random forest on all features:
+![Screenshot of code of the random forest doing feature selection on entire dataset](https://github.com/angellicodigo/Medlytics-Week1/blob/main/Challenge%20Project/random_forest_1.png)
+
+Here is random forest on the four important features, 'TSH', 'T3', 'TT4', and 'FTI'.
+![Screenshot of code of the random forest doing feature selection on features 'TSH', 'T3', 'TT4', and 'FTI'.](https://github.com/angellicodigo/Medlytics-Week1/blob/main/Challenge%20Project/random_forest_2.png)
+
+Here is our ROC curve of using 'TSH' for our logistic regression.
+![ROC Curve](https://github.com/angellicodigo/Medlytics-Week1/blob/main/Challenge%20Project/ROC_result.png)
+
+And our confusion matrix:
+```
+[488 12]
+[0 38]
+```
+
+
 # What else does Medlytics Week 1 contain?
 This is the repository for all lectures, assignments, and datasets for Week 1 of the BeaverWorks Medlytics course for 2022. The slides are provided here for easy reference, but will be presented in lecture format. You should fork this repository at the beginning of the week and work on your own copy when completing notebooks and challenge projects.
 
